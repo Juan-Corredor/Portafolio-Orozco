@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Mi Página con Navbar Sticky</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/style-header.css" />
+    <link rel="stylesheet" href="./styles/style-body.css" />
   </head>
 
   <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <div class="navbar-left">
         <a href="#">
           <img src="./resource/firma.svg" alt="Logo" width="200" />
@@ -26,25 +28,22 @@
     </nav>
 
     <header>
-      <section class="section-principal">
-        <img src="./resource/banner.svg" alt="banner" class="banner" />
-
-        <article class="header">
-          <p class="title-princpal">
-            Transformando finanzas,
-            <span class="title-princpal-span">¡Creando oportunidades!</span>
-          </p>
-          <a href="#" class="contact-button">
-            <span class="contact-whatsapp-button"> Enviar Consulta </span>
-          </a>
-          <div class="bi-social-networks">
-            <a href="" class="bi bi-whatsapp"></a>
-            <a href="" class="bi bi-instagram"></a>
-            <a href="" class="bi bi-facebook"></a>
-            <a href="" class="bi bi-linkedin"></a>
-          </div>
-        </article>
-      </section>
+      <div class="backgroud-image-header" />
+      <article class="description-header">
+        <p class="body-copy-header">
+          Transformando finanzas,
+          <span class="body-copy-header-span">¡Creando oportunidades!</span>
+        </p>
+        <a href="#" class="contact-button">
+          <span class="contact-whatsapp-button"> Enviar Consulta </span>
+        </a>
+        <div class="bi-social-networks">
+          <a href="" class="bi bi-whatsapp"></a>
+          <a href="" class="bi bi-instagram"></a>
+          <a href="" class="bi bi-facebook"></a>
+          <a href="" class="bi bi-linkedin"></a>
+        </div>
+      </article>
     </header>
 
     <main>
@@ -67,48 +66,100 @@
       <section class="sections">
         <h1>Contacto</h1>
         <article class="social-networks-container">
-            <div class="social-networks co-whatsapp">
-              <a href="" class="bi bi-whatsapp"></a>
-            </div>
-            <div class="social-networks co-instagram">
-              <a href="" class="bi bi-instagram"></a>
-            </div>
-            <div class="social-networks co-facebook">
-              <a href="" class="bi bi-facebook"></a>
-            </div>
-            <div class="social-networks co-linkedin">
-              <a href="" class="bi bi-linkedin"></a>
-            </div>
+          <div class="social-networks co-whatsapp">
+            <a href="#" class="bi bi-whatsapp"></a>
+          </div>
+          <div class="social-networks co-instagram">
+            <a href="#" class="bi bi-instagram"></a>
+          </div>
+          <div class="social-networks co-facebook">
+            <a href="#" class="bi bi-facebook"></a>
+          </div>
+          <div class="social-networks co-linkedin">
+            <a href="#" class="bi bi-linkedin"></a>
+          </div>
         </article>
       </section>
 
       <section class="section-form">
-        <img src="./resource/imagenForm.avif" alt="" id="imagen-form" />
-        <article class="form-solicitud">
-            <h1>Formulario solicitud</h1>
-            <div class="inputs-form">
-                <input
-                type="text"
-                name=""
-                id="name"
-                placeholder="Escribe un nombre..."
-                />
-                <input
-                type="email"
-                name=""
-                id="email"
-                placeholder="Escribe correo..."
-                />
+        <article class="contact-container">
+          <h3>Contáctenos</h3>
+          <div class="contact-principal-container">
+            <div class="contact-description">
+              <div class="icon-contact-container">
+                <a href="#" class="bi bi-envelope-at-fill"></a>
+              </div>
+              <div class="text-container">
+                <span>Correo electrónico:</span>
+                <span>correo.prueba@gmail.com</span>
+              </div>
             </div>
-            <textarea name="" id="" cols="4" rows="5" placeholder="Escribe tú solicitud..."></textarea>
-            
-            <div class="div-button">
-              <button class="contact-button"> 
-                  Enviar <i class="bi bi-arrow-right"></i>
-              </button>
+            <div class="contact-description">
+              <div class="icon-contact-container">
+                <a href="#" class="bi bi-whatsapp"></a>
+              </div>
+              <div class="text-container">
+                <span>Teléfono:</span>
+                <span>+57 325 853 4569</span>
+              </div>
             </div>
+            <div class="contact-description">
+              <div class="icon-contact-container">
+                <a href="" class="bi bi-instagram"></a>
+              </div>
+              <div class="text-container">
+                <span>Instagram:</span>
+                <span>Usuario Instagram</span>
+              </div>
+            </div>
+            <div class="contact-description">
+              <div class="icon-contact-container">
+                <a href="" class="bi bi-linkedin"></a>
+              </div>
+              <div class="text-container">
+                <span>Linkedin:</span>
+                <span>Usuario linkedin</span>
+              </div>
+            </div>
+          </div>
         </article>
-      </section>      
+        <article class="form-solicitud">
+          <h1>Formulario solicitud</h1>
+          <div class="inputs-form">
+            <input
+              type="text"
+              name=""
+              id="name"
+              placeholder="Escribe un nombre..."
+            />
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Escribe correo..."
+            />
+          </div>
+          <input
+            type="text"
+            name=""
+            id="asunto"
+            placeholder="Escribe Asunto..."
+          />
+          <textarea
+            name=""
+            id=""
+            cols="4"
+            rows="5"
+            placeholder="Escribe tú solicitud..."
+          ></textarea>
+
+          <div class="div-button">
+            <button class="contact-button">
+              Enviar <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+      </section>
     </main>
   </body>
 </html>

@@ -1,0 +1,190 @@
+main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0%;
+  padding: 0%;
+  background-color: #000000f0;
+  height: 100%;
+}
+
+
+/* Estilo para la sección del formulario */
+.section-form {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos a lo largo del eje horizontal */
+  align-items: center; /* Centra verticalmente los elementos */
+  width: 95%;
+  height: 100vh;
+  margin-bottom: 5%;
+  border: #ffffff 1px solid;
+  box-shadow: rgba(91, 91, 91, 0.283) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.6s;
+}
+/* .section-form:hover, .section-form:focus,
+.sections:hover{
+  width: 100%;
+} */
+
+/* Estilo para la imagen */
+/* Estilo para la imagen */
+.contact-container {  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
+  overflow: auto;
+  background-color: #0073b2;
+  color: #fff;
+  font-size: 21PX;
+}
+
+.contact-container > h3{
+  font-size: 50px;
+}
+
+.contact-description{
+  width: 100%;
+  display: flex;  
+  margin-top: 15px;  
+}
+
+.icon-contact-container{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;  
+}
+.icon-contact-container > a{
+  color: #fff;
+  font-size: 30px;
+}
+.text-container{  
+  display: flex;  
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+/* Estilo para el formulario */
+.form-solicitud {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;  
+  align-items: start;
+  width: 55%;
+  padding: 3%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.form-solicitud h1,  .sections h1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 50px;
+  color: #ffffffc2;
+}
+
+.inputs-form {
+  display: flex;
+  align-items: start;
+  padding: 0%;
+  margin: 0%;
+
+  width: 100%;
+}
+
+/* Estilo para los campos de entrada y el textarea */
+.inputs-form input,
+input,
+textarea {
+  width: 100%;
+  border: none;
+  color: #ffffffda;
+  border-bottom: 2px solid #f4f4f4af; /* Borde inferior transparente inicialmente */
+  padding: 5px;
+  margin-bottom: 6%;
+  transition: border-color 0.3s; /* Cambio de color del borde en 0.3 segundos */
+  background-color: transparent; /* Fondo transparente */
+  font-size: 20px;
+}
+
+.inputs-form input:hover,
+.inputs-form input:focus,
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: #1fb0fd; /* Cambia a un color verde al pasar el cursor */
+}
+
+.inputs-form input::placeholder,
+input::placeholder,
+textarea::placeholder {
+  color: #dcdcdcc4;
+}
+
+#name {
+  width: 40%;
+}
+#asunto {  
+  width: 80%;
+}
+#email {
+  width: 60%;
+  margin-left: 15px;
+}
+
+.div-button{
+  width: 100%;  
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 0%;
+  margin: 0%;
+}
+
+.div-button .contact-button {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;  
+  font-size: 20px;
+  background-color: #ffffff09;
+  color: #fff;
+  border: none;
+  border-bottom: 0.2px solid #ffffff;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.6s;
+  outline: none;
+  
+}
+.div-button .contact-button i{
+  padding-top: 5px;
+  margin-left: 15px;
+  font-size: 28px;
+}
+
+
+.div-button .contact-button:hover{
+  border-bottom: 1px solid #3a8bc5;
+  box-shadow: inset 400px 0 0 0 #3a8bc5;
+  color: #fff;
+}
+.div-button .contact-button:hover i {
+  color: #fff;
+}

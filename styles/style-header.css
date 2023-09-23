@@ -1,0 +1,66 @@
+header{
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100VH;  
+}
+.description-header{
+  background-color: rgba(0, 0, 0, 0.663);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;    
+}
+
+.backgroud-image-header{ 
+  width: 100%;
+  height: 100%;
+  background-image: url(../resource/fondo.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.body-copy-header {
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 70px;  
+  color: #fff;
+}
+
+.body-copy-header-span {
+  font-size: 90px;
+  color: #1fb0fd;
+}
+
+/*Estilo NAV*/
+/* Estilo base para la barra de navegación */
+.navbar {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 60px; /* Ajusta la altura de tu barra de navegación */
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ajusta el valor del z-index según sea necesario */  
+  border-bottom: 1px solid #ffffff;
+
+}
+.navbar-left, .navbar-right{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+#links {
+  text-decoration: none;
+  color: #ffffff; /* Cambia esto al color de texto deseado */
+  margin: 0 15px; /* Espacio entre enlaces */
+}

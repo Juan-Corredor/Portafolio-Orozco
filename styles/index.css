@@ -1,0 +1,78 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 0%; 
+  height: 100%;
+  width: 100%; 
+}
+
+/* Botones */
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;  
+  font-size: 20px;
+  padding: 11px 30px;
+  background-color: #a7a7a72e;
+  color: #fff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.6s;
+  outline: none;
+  
+}
+.contact-button i{
+  padding-top: 5px;
+  font-size: 28px;
+}
+
+
+.contact-button:hover{
+  border: 1px solid #3a8bc5;
+  box-shadow: inset 400px 0 0 0 #3a8bc5;
+  color: #fff;
+}
+.contact-button:hover i {
+  color: #fff;
+}
+
+.bi-social-networks {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bi-social-networks .bi {
+  margin-left: 5%;
+  font-size: 35px;
+  text-decoration: none;
+  color: #ffffffc3;
+  transition: ease-out 0.2s;
+}
+
+.bi-social-networks .bi-whatsapp:hover {
+  color: #16c34a;
+  font-size: 40px;
+}
+
+.bi-social-networks .bi-instagram:hover {
+  color: #cc2366;
+  font-size: 40px;
+}
+
+.bi-social-networks .bi-facebook:hover {
+  color: #0f8ff2;
+  font-size: 40px;
+}
+
+.bi-social-networks .bi-linkedin:hover {
+  color: #02669c;
+  font-size: 40px;
+}
