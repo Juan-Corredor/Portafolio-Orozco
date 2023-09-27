@@ -9,8 +9,9 @@ main{
   background-color: #fffffff0;
   height: 100%;
 }
-
-
+.sections{
+  height: 100vh;
+}
 /* Estilo para la sección del formulario */
 .section-form {  
   background-color: transparent;
@@ -20,53 +21,70 @@ main{
   width: 80%;
   height: 75vh;
   margin-bottom: 5%;
-  border: #00000042 1px solid;
-  /* box-shadow: rgba(91, 91, 91, 0.103) 0px 4px 6px 8px,
-    rgba(0, 0, 0, 0.027) 0px 2px 4px -1px; */
+  /* border: #00000042 1px solid; */
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.6s;
 }
-/* .section-form:hover, .section-form:focus,
-.sections:hover{
-  width: 100%;
-} */
 
-/* Estilo para la imagen */
-/* Estilo para la imagen */
+/* Estilo para contenedor de información */
 .contact-container {  
   display: flex;
   justify-content: center;
   align-items: center;  
   flex-direction: column;
-  width: 35%;
-  height: 100%;
+  width: 36%;
+  height: 100%;  
   overflow: auto;
   background-color: #0073b2;  
   color: #fff;
-  font-size: 21PX;
+  font-size: 16PX;
 }
 
-.contact-container > h3{
-  font-size: 50px;
+.contact-container > h3{ font-size: 35px; }
+
+.contact-principal-container{
+  width: 75%;  
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-description{
   width: 100%;
   display: flex;  
-  margin-top: 15px;  
+  align-items: center;
+  margin-bottom: 5%;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.6s;
+}
+.contact-description:hover{
+  width: 130%;
+  margin-left: 0%;
+  margin-right: 0%;
+  border-start-start-radius: 30px; 
+  border-end-start-radius: 30px; 
+  background-color: #07273821;  
 }
 
 .icon-contact-container{
   display: flex;  
   justify-content: center;
   align-items: center;
+  border: solid 1px #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;  
   margin-right: 5%;  
 }
+
 .icon-contact-container > a{
   color: #fff;
   font-size: 30px;
 }
+
 .text-container{  
   display: flex;  
   justify-content: start;
@@ -80,7 +98,7 @@ main{
   justify-content: center;
   flex-direction: column;  
   align-items: start;
-  width: 65%;
+  width: 64%;
   padding: 3%;
   height: 100%;
   overflow: hidden;
@@ -133,7 +151,7 @@ textarea:focus {
 .inputs-form input::placeholder,
 input::placeholder,
 textarea::placeholder {
-  color: #1d1d1dc4;
+  color: #1d1d1d6c;
 }
 
 #name {
@@ -153,7 +171,7 @@ textarea::placeholder {
   align-items: end;
   justify-content: end;
   padding: 0%;
-  margin: 0%;
+  margin: 0%;  
   margin-bottom: 5%;
 }
 
@@ -165,7 +183,7 @@ textarea::placeholder {
   width: 40%;  
   font-size: 20px;
   background-color: transparent;
-  color: #153146;
+  color: #3a8bc5;
   border: none;
   border: 0.2px solid #3a8bc5;
   text-decoration: none;
