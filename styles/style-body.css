@@ -12,12 +12,13 @@ main{
 .sections{
   height: 100vh;
 }
+
 /* Estilo para la sección del formulario */
 .section-form {  
   background-color: transparent;
   display: flex;
-  justify-content: space-between; /* Distribuye los elementos a lo largo del eje horizontal */
-  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between;
+  align-items: center;
   width: 80%;
   height: 75vh;
   margin-bottom: 5%;
@@ -157,9 +158,11 @@ textarea::placeholder {
 #name {
   width: 40%;
 }
+
 #asunto {  
   width: 80%;
 }
+
 #email {
   width: 60%;
   margin-left: 15px;
@@ -193,18 +196,38 @@ textarea::placeholder {
   outline: none;
   
 }
+
 .div-button .contact-button i{
   padding-top: 5px;
   margin-left: 15px;
   font-size: 28px;
 }
 
-
 .div-button .contact-button:hover{
   border: 1px solid #3a8bc5;
   box-shadow: inset 400px 0 0 0 #3a8bc5;
   color: #fff;
 }
+
 .div-button .contact-button:hover i {
   color: #fff;
+}
+.sections-about{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-container{
+  width: 60%;
+  margin-left: 1%;  
+}
+/* SECCION ACERCA DE  */
+.about-img-container{
+  width: 40%;
+  height: 100%;
+  background-image: url(../resource/escena-oficina-cerca.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
