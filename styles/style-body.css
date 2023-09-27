@@ -12,7 +12,7 @@ main{
 
 
 /* Estilo para la sección del formulario */
-.section-form {
+.section-form {  
   background-color: transparent;
   display: flex;
   justify-content: space-between; /* Distribuye los elementos a lo largo del eje horizontal */
@@ -119,6 +119,7 @@ textarea {
   transition: border-color 0.3s; /* Cambio de color del borde en 0.3 segundos */
   background-color: transparent; /* Fondo transparente */
   font-size: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .inputs-form input:hover,
