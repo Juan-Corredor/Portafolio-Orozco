@@ -18,11 +18,11 @@ main{
   justify-content: space-between; /* Distribuye los elementos a lo largo del eje horizontal */
   align-items: center; /* Centra verticalmente los elementos */
   width: 80%;
-  height: 100vh;
+  height: 75vh;
   margin-bottom: 5%;
-  border: #0000001a 1px solid;
-  box-shadow: rgba(91, 91, 91, 0.283) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border: #00000042 1px solid;
+  /* box-shadow: rgba(91, 91, 91, 0.103) 0px 4px 6px 8px,
+    rgba(0, 0, 0, 0.027) 0px 2px 4px -1px; */
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.6s;
@@ -42,9 +42,7 @@ main{
   width: 35%;
   height: 100%;
   overflow: auto;
-  background-color: #0073b2;
-  box-shadow: rgba(91, 91, 91, 0.283) 0px 4px 6px 8px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  background-color: #0073b2;  
   color: #fff;
   font-size: 21PX;
 }
@@ -93,8 +91,8 @@ main{
   display: flex;
   justify-content: center;
   width: 100%;
-  font-size: 50px;
-  color: #ffffffc2;
+  font-size: 45px;
+  color: #072738ef;
 }
 
 .inputs-form {
@@ -156,6 +154,7 @@ textarea::placeholder {
   justify-content: end;
   padding: 0%;
   margin: 0%;
+  margin-bottom: 5%;
 }
 
 .div-button .contact-button {
