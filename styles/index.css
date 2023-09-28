@@ -5,8 +5,7 @@ body{
   align-items: center;
   margin: 0%;
   padding: 0%; 
-  height: 100%;
-  width: 100%; 
+  width: 100%;   
   font-family: 'Poppins', sans-serif;
 }
 
@@ -76,4 +75,35 @@ body{
 .bi-social-networks .bi-linkedin:hover {
   color: #02669c;
   font-size: 40px;
+}
+
+section{
+  width: 100%;  
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* estilos secciones y articulos */
+.article-img-container{
+  width: 50%;
+  padding: 0%;
+  height: 100%;    
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.article-two{
+  font-size: 21px;
+  padding: 50px;
+  overflow: hidden;
+  width: 45%;  
+  text-align: justify;  
+}
+
+.internal-item-container h1{      
+  font-size: 25px;
+  color: #072738ef;
 }

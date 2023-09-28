@@ -29,12 +29,11 @@ main{
 }
 
 /* Estilo para contenedor de información */
-.contact-container {  
+.contact-img {  
   display: flex;
   justify-content: center;
   align-items: center;  
   flex-direction: column;
-  width: 36%;
   height: 100%;  
   overflow: auto;
   background-color: #0073b2;  
@@ -42,7 +41,7 @@ main{
   font-size: 16PX;
 }
 
-.contact-container > h3{ font-size: 35px; }
+.contact-img > h3{ font-size: 35px; }
 
 .contact-principal-container{
   width: 75%;  
@@ -70,7 +69,7 @@ main{
   background-color: #07273821;  
 }
 
-.icon-contact-container{
+.icon-contact-img{
   display: flex;  
   justify-content: center;
   align-items: center;
@@ -81,7 +80,7 @@ main{
   margin-right: 5%;  
 }
 
-.icon-contact-container > a{
+.icon-contact-img > a{
   color: #fff;
   font-size: 30px;
 }
@@ -93,26 +92,13 @@ main{
   flex-direction: column;
 }
 
-/* Estilo para el formulario */
-.form-solicitud {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;  
-  align-items: start;
-  width: 64%;
-  padding: 3%;
-  height: 100%;
-  overflow: hidden;
-}
-
-
-.form-solicitud h1,  .sections h1{
+/* #contacto >  .internal-item-container h1{
   display: flex;
   justify-content: center;
   width: 100%;
   font-size: 45px;
   color: #072738ef;
-}
+} */
 
 .inputs-form {
   display: flex;
@@ -212,37 +198,8 @@ textarea::placeholder {
 .div-button .contact-button:hover i {
   color: #fff;
 }
-.sections-about{
-  width: 100%;  
-  height: calc(100vh - 60px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-/* SECCION ACERCA DE  */
-.about-img-container{
-  width: 55%;
-  padding: 0%;
-  height: 100%;  
-  background-image: url(../resource/escena-oficina-cerca.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.prueba-container{
-
-  padding: 50px;
-}
-
-.about-container{
-  font-size: 21px;
-  overflow: hidden;
-  width: 55%;  
-  /* margin-left: 1%;
-  margin-right: 1%; */
-  text-align: justify;
-  /* border-block-start: 1px solid #072738;  
-  border-block-end: 1px solid #072738; */
+/* IMAGENES SECCIONES  */
+.about-img{ 
+  background-image: url(../resource/escena-oficina-cerca.jpg);  
 }

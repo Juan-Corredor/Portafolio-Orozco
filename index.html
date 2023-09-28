@@ -15,18 +15,19 @@
 <body>
   <nav class="navbar" id="navbar">
     <div class="navbar-left">
-      <a href="#">
+      <a href="#header">
         <img src="./resource/firma.svg" alt="Logo" width="200" />
       </a>
     </div>
     <div class="navbar-right">
+      <a id="links" href="#header"><i class="bi bi-house" style="font-size: 20px;"></i></a>
       <a id="links" href="#acerca">Acerca de</a>
       <a id="links" href="#servicios">Portafolio</a>
       <a id="links" href="#contacto">Contactos</a>
     </div>
   </nav>
 
-  <header>
+  <header id="header">
     <div class="backgroud-image-header">
       <article class="description-header">
         <p class="body-copy-header">
@@ -47,43 +48,51 @@
   </header>
 
   <main>
-    <section class="sections-about" id="acerca">
-      <article class="about-img-container">
+    <section id="acerca">
+      <article class="article-img-container about-img">
       </article>
-      <article class="about-container">
-        <div class="prueba-container">
-          <h1>Acerca de nosotros</h1>
-          <p>
-            Bienvenidos, mi nombre es XXXXXXXXXXXXX, su socio de confianza en el mundo financiero y contable. Somos una
-            firma de contadores públicos comprometida con la excelencia, la integridad y el servicio de calidad. Nuestro
-            equipo de profesionales altamente calificados está dedicado a brindar soluciones financieras personalizadas
-            que ayuden a nuestros clientes a alcanzar sus metas y maximizar su éxito.
-            Con una trayectoria sólida y una profunda experiencia en el campo de la contabilidad y las finanzas, hemos
-            servido a una amplia variedad de clientes, desde pequeñas empresas locales hasta corporaciones
-            multinacionales. Nuestro enfoque se centra en comprender las necesidades únicas de cada cliente y ofrecer
-            soluciones innovadoras que aborden sus desafíos específicos.
-          </p>
-          <h1>Comprometidos con tus finanzas y responsabilidades</h1>
-          <ul>
-            <li>Experiencia Comprobada</li>
-            <li>Conocimiento Profundo y multisectorial</li>
-            <li>Enfoque Personalizado</li>
-            <li>Confianza y Ética</li>
-          </ul>           
-        </div>
-      </article>
-    </section>
-    
-    <section class="sections-about" id="servicios"> 
-      <article class="about-container">
-        <h1>Acerca de nosotros</h1>                 
-      </article>
-      <article class="about-img-container">        
+      <article class="article-two internal-item-container">
+        <h1>Acerca de nosotros</h1>
+        <p>
+          Bienvenidos, mi nombre es XXXXXXXXXXXXX, su socio de confianza en el mundo financiero y contable. Somos una
+          firma de contadores públicos comprometida con la excelencia, la integridad y el servicio de calidad. Nuestro
+          equipo de profesionales altamente calificados está dedicado a brindar soluciones financieras personalizadas
+          que ayuden a nuestros clientes a alcanzar sus metas y maximizar su éxito.
+          Con una trayectoria sólida y una profunda experiencia en el campo de la contabilidad y las finanzas, hemos
+          servido a una amplia variedad de clientes, desde pequeñas empresas locales hasta corporaciones
+          multinacionales. Nuestro enfoque se centra en comprender las necesidades únicas de cada cliente y ofrecer
+          soluciones innovadoras que aborden sus desafíos específicos.
+        </p>
+        <h1>Comprometidos con tus finanzas y responsabilidades</h1>
+        <ul>
+          <li>Experiencia Comprobada</li>
+          <li>Conocimiento Profundo y multisectorial</li>
+          <li>Enfoque Personalizado</li>
+          <li>Confianza y Ética</li>
+        </ul>
       </article>
     </section>
 
-    <section class="section-form" id="contacto">
-      <article class="contact-container">
+    <section id="servicios">
+    </section>
+
+    <section id="contacto">
+      <article class="article-two internal-item-container">
+        <h1>Formulario solicitud</h1>
+        <div class="inputs-form">
+          <input type="text" name="" id="name" placeholder="Escribe un nombre..." />
+          <input type="email" name="" id="email" placeholder="Escribe correo..." />
+        </div>
+        <input type="text" name="" id="asunto" placeholder="Escribe Asunto..." />
+        <textarea name="" id="" cols="4" rows="5" placeholder="Escribe tú solicitud..."></textarea>
+
+        <div class="div-button">
+          <button class="contact-button">
+            Enviar <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article class="article-img-container contact-img">
         <h3>Contáctenos</h3>
         <div class="contact-principal-container">
           <div class="contact-description">
@@ -124,23 +133,10 @@
           </div>
         </div>
       </article>
-      <article class="form-solicitud">
-        <h1>Formulario solicitud</h1>
-        <div class="inputs-form">
-          <input type="text" name="" id="name" placeholder="Escribe un nombre..." />
-          <input type="email" name="" id="email" placeholder="Escribe correo..." />
-        </div>
-        <input type="text" name="" id="asunto" placeholder="Escribe Asunto..." />
-        <textarea name="" id="" cols="4" rows="5" placeholder="Escribe tú solicitud..."></textarea>
-
-        <div class="div-button">
-          <button class="contact-button">
-            Enviar <i class="bi bi-arrow-right"></i>
-          </button>
-        </div>
-      </article>
     </section>
   </main>
+
+  <script src="./scripts/menu.js"></script>
 </body>
 
 </html>
