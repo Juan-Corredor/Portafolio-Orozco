@@ -5,153 +5,8 @@ main{
   align-items: center;
   flex-direction: column;
   margin: 0%;
-  padding: 0%;
-  background-color: #fffffff0;
+  padding: 0%;  
   height: 100%;
-}
-.sections{
-  height: 100vh;
-}
-
-/* Estilo para la sección del formulario */
-.section-form {  
-  background-color: transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  height: calc(100vh - 60px);
-  margin-bottom: 5%;
-  /* border: #00000042 1px solid; */
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.6s;
-}
-
-/* Estilo para contenedor de información */
-.contact-img {  
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  flex-direction: column;
-  height: 100%;  
-  overflow: auto;
-  background-color: #0073b2;  
-  color: #fff;
-  font-size: 16PX;
-}
-
-.contact-img > h3{ font-size: 35px; }
-
-.contact-principal-container{
-  width: 75%;  
-  display: flex;
-  flex-direction: column;  
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-description{
-  width: 100%;
-  display: flex;  
-  align-items: center;
-  margin-bottom: 5%;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.6s;
-}
-.contact-description:hover{
-  width: 130%;
-  margin-left: 0%;
-  margin-right: 0%;
-  border-start-start-radius: 30px; 
-  border-end-start-radius: 30px; 
-  background-color: #07273821;  
-}
-
-.icon-contact-img{
-  display: flex;  
-  justify-content: center;
-  align-items: center;
-  border: solid 1px #fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;  
-  margin-right: 5%;  
-}
-
-.icon-contact-img > a{
-  color: #fff;
-  font-size: 30px;
-}
-
-.text-container{  
-  display: flex;  
-  justify-content: start;
-  align-items: start;
-  flex-direction: column;
-}
-
-/* #contacto >  .internal-item-container h1{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  font-size: 45px;
-  color: #072738ef;
-} */
-
-.inputs-form {
-  display: flex;
-  align-items: start;
-  padding: 0%;
-  margin: 0%;
-
-  width: 100%;
-}
-
-/* Estilo para los campos de entrada y el textarea */
-.inputs-form input,
-input,
-textarea {
-  width: 100%;
-  border: none;
-  color: #072738;
-  border-bottom: 2px solid #777777af; /* Borde inferior transparente inicialmente */
-  padding: 5px;
-  margin-bottom: 6%;
-  transition: border-color 0.3s; /* Cambio de color del borde en 0.3 segundos */
-  background-color: transparent; /* Fondo transparente */
-  font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.inputs-form input:hover,
-.inputs-form input:focus,
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
-  outline: none;
-  border-color: #1fb0fd; /* Cambia a un color verde al pasar el cursor */
-}
-
-.inputs-form input::placeholder,
-input::placeholder,
-textarea::placeholder {
-  color: #1d1d1d6c;
-}
-
-#name {
-  width: 40%;
-}
-
-#asunto {  
-  width: 80%;
-}
-
-#email {
-  width: 60%;
-  margin-left: 15px;
 }
 
 .div-button{
@@ -199,7 +54,139 @@ textarea::placeholder {
   color: #fff;
 }
 
-/* IMAGENES SECCIONES  */
-.about-img{ 
+/* SECCION DE ABOUT  */
+#about >  .article-img-container{ 
   background-image: url(../resource/escena-oficina-cerca.jpg);  
 }
+#about > .article-two{
+  -webkit-box-shadow: inset 36px 0px 22px -38px rgba(0,0,0,0.32);
+  -moz-box-shadow: inset 36px 0px 22px -38px rgba(0,0,0,0.32);
+  box-shadow: inset 36px 0px 22px -38px rgba(0,0,0,0.32);
+}
+
+/* SECCION DE CONTACTO*/
+#contact > .article-img-container{
+  background-image: url(../resource/fondo2.jpg);  
+}
+
+#contact >  .article-two {
+  -webkit-box-shadow: inset -36px 0px 22px -38px rgba(0,0,0,0.32);
+  -moz-box-shadow: inset -36px 0px 22px -38px rgba(0,0,0,0.32);
+  box-shadow: inset -36px 0px 22px -38px rgba(0,0,0,0.32)
+}
+
+#contact >  .article-two h1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 45px;
+  margin-bottom: 10%;
+}
+
+
+.contact-img-internal-container {  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  width: 100%;
+  height: 100%;  
+  overflow: auto;
+  background-color: #071c27ad;  
+  color: #fff;
+  font-size: 16PX;
+}
+.contact-img-internal-container > h3{ font-size: 50px; }
+
+.text-container{  
+  display: flex;  
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.contact-description{
+  width: 50%;
+  display: flex;  
+  align-items: center;
+  margin-bottom: 5%;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.6s;
+}
+.contact-description:hover{
+  /* width: 100%;
+  margin-left: 0%;
+  margin-right: 0%; */
+  font-size: 20px;
+  border-start-start-radius: 30px; 
+  border-end-start-radius: 30px;
+  background-color: #07273800;  
+}
+
+
+.icon-contact-container{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;  
+  margin-right: 5%;  
+}
+
+.icon-contact-container > a{
+  color: #fff;
+  font-size: 30px;
+}
+
+.inputs-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;  
+  margin: 0%;
+  padding: 0%;
+}
+
+.inputs-form > #name{
+  width: 45%;  
+  margin-right: 3%;
+}
+.inputs-form > #email{
+  width: 55%;  
+}
+
+/* Estilo para los campos de entrada y el textarea */
+.inputs-form input,
+input,
+textarea {
+  width: 100%;
+  border: none;
+  color: #094d72ef;
+  border-bottom: 2px solid #07273885; /* Borde inferior transparente inicialmente */
+  padding: 5px;
+  margin-bottom: 6%;
+  transition: border-color 0.3s; /* Cambio de color del borde en 0.3 segundos */
+  background-color: transparent; /* Fondo transparente */
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.inputs-form input:hover,
+.inputs-form input:focus,
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: #1fb0fd; /* Cambia a un color verde al pasar el cursor */
+}
+
+.inputs-form input::placeholder,
+input::placeholder,
+textarea::placeholder {
+  color: #0727389c;
+}
+
+
