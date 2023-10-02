@@ -21,8 +21,6 @@ body{
   color: #fff;
   border: 1px solid #ffffff;
   text-decoration: none;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
   transition: ease-out 0.3s;
   outline: none;
   
