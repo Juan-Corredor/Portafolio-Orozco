@@ -81,24 +81,34 @@
       <article class="article-two">
         <h1>Formulario solicitud</h1>
         <div class="inputs-form">
-          <input type="text" name="" id="name" placeholder="Escribe un nombre..." />
-          <input type="email" name="" id="email" placeholder="Escribe correo..." />
+          <div class="input-container">
+            <input type="text" name="" id="name" required>
+            <label for="name">Nombre</label>
+          </div>
+          <div class="input-container">
+            <input type="email" name="" id="email" required>
+            <label for="email">Correo Electrónico</label>
+          </div>
         </div>
-        <input type="text" name="" id="asunto" placeholder="Escribe Asunto..." />
-        <textarea name="" id="" cols="4" rows="5" placeholder="Escribe tú solicitud..."></textarea>
-
+        <div class="input-container">
+          <input type="text" name="" id="asunto" required>
+          <label for="asunto">Asunto</label>
+        </div>
+        <div class="input-container">
+          <textarea name="" id="" cols="4" rows="5" required></textarea>
+          <label for="mensaje">Solicitud</label>
+        </div>
         <div class="div-button">
-          <button class="contact-button">
-            Enviar <i class="bi bi-arrow-right"></i>
-          </button>
+          <button class="contact-button">Enviar <i class="bi bi-arrow-right"></i></button>
         </div>
       </article>
+      
       <article class="article-img-container">
         <div class="contact-img-internal-container">
           <h3>Contáctenos</h3>
           <div class="contact-description">
             <div class="icon-contact-container">
-              <a href="#" class="bi bi-envelope-at-fill"></a>
+              <a href="#" class="bi bi-envelope-at-fill icon-contact"></a>
             </div>
             <div class="text-container">
               <span><strong>Correo electrónico:</strong></span>
@@ -107,7 +117,7 @@
           </div>
           <div class="contact-description">
             <div class="icon-contact-container">
-              <a href="#" class="bi bi-whatsapp"></a>
+              <a href="#" class="bi bi-whatsapp icon-contact"></a>
             </div>
             <div class="text-container">
               <span><strong>Teléfonos:</strong></span>
@@ -117,7 +127,7 @@
           </div>
           <div class="contact-description">
             <div class="icon-contact-container">
-              <a href="" class="bi bi-instagram"></a>
+              <a href="" class="bi bi-instagram icon-contact"></a>
             </div>
             <div class="text-container">
               <span><strong>Instagram:</strong></span>
@@ -126,7 +136,7 @@
           </div>
           <div class="contact-description">
             <div class="icon-contact-container">
-              <a href="" class="bi bi-linkedin"></a>
+              <a href="" class="bi bi-linkedin icon-contact"></a>
             </div>
             <div class="text-container">
               <span><strong>Linkedin:</strong></span>

@@ -99,38 +99,41 @@ main{
 .contact-img-internal-container > h3{ font-size: 50px; }
 
 .contact-description{  
-  width: 50%;
+  width: 100%;
   display: flex;  
   align-items: center;
   justify-content: center;
   margin-bottom: 5%;
 }
 .contact-description:hover > .text-container{
-  /* width: 100%;
-  margin-left: 0%;
-  margin-right: 0%; */
   font-size: 20px;
   border-start-start-radius: 30px; 
   border-end-start-radius: 30px;  
 }
 
-.contact-description:hover > .icon-contact-container{
-  background-color: aqua;
+
+.contact-description:hover .icon-contact-container > .icon-contact{
+  color: #1fb0fd;
+  
 }
 
 .text-container{  
-  width: 50%;
+  width: 65%;
   display: flex;  
   justify-content: start;
   align-items: start;
   flex-direction: column;  
   transition: var(--flex-transition);
 }
-
-
-
-
 .icon-contact-container{
+  width: 40%;
+  display: flex;  
+  justify-content: end;
+  align-items: end;  
+  transition: var(--flex-transition);
+}
+
+.icon-contact{
   display: flex;  
   justify-content: center;
   align-items: center;
@@ -139,60 +142,70 @@ main{
   height: 60px;
   border-radius: 50%;  
   margin-right: 5%;  
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
   transition: var(--flex-transition);
 }
 
-.icon-contact-container > a{
-  color: #fff;
-  font-size: 30px;
+
+/* Estilo para los campos de entrada y el textarea */
+
+.input-container {
+  position: relative;
+  margin-bottom: 50px;
+  width: 100%;
 }
+
 
 .inputs-form {
   display: flex;
   justify-content: center;
+  width: 100%;   
+}
+
+.input-container > #name{
+  width: 90%;  
+}
+.input-container > #email{
   width: 100%;  
-  margin: 0%;
-  padding: 0%;
 }
 
-.inputs-form > #name{
-  width: 45%;  
-  margin-right: 3%;
-}
-.inputs-form > #email{
-  width: 55%;  
-}
-
-/* Estilo para los campos de entrada y el textarea */
-.inputs-form input,
-input,
-textarea {
+.input-container input,
+.input-container textarea {
   width: 100%;
   border: none;
   color: #094d72ef;
-  border-bottom: 2px solid #07273885; /* Borde inferior transparente inicialmente */
+  border-bottom: 2px solid #07273885;
   padding: 5px;
-  margin-bottom: 6%;
-  transition: border-color 0.3s; /* Cambio de color del borde en 0.3 segundos */
-  background-color: transparent; /* Fondo transparente */
+  background-color: transparent;
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
 }
 
-.inputs-form input:hover,
-.inputs-form input:focus,
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
-  outline: none;
-  border-color: #1fb0fd; /* Cambia a un color verde al pasar el cursor */
-}
 
-.inputs-form input::placeholder,
-input::placeholder,
-textarea::placeholder {
+.input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  font-size: 16px;
   color: #0727389c;
 }
 
+.input-container input:focus + label,
+.input-container textarea:focus + label,
+.input-container input:valid + label,
+.input-container textarea:valid + label {
+  top: -20px;
+  font-size: 14px;
+  color: #1fb0fd;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+  outline: none;
+  border-color: #1fb0fd;
+}
 
