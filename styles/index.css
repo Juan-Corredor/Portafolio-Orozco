@@ -92,6 +92,11 @@ section{
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  
+}
+.article-img-container img{
+  flex-grow: 1;
+  object-fit: cover;
 }
 
 .article-two{
@@ -108,7 +113,7 @@ section{
   text-align: justify;    
 }
 
-.article-two h1{      
+#title-principal{
   font-size: 25px;
   color: #0f8ff2;
 }
