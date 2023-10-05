@@ -1,3 +1,73 @@
+header{
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100vh;  
+}
+.description-header{
+  background-color: rgba(0, 0, 0, 0.663);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;    
+}
+
+.backgroud-image-header{ 
+  width: 100%;
+  height: 100%;
+  background-image: url(../resource/fondo.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.body-copy-header {
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 70px;  
+  color: #fff;
+}
+
+.body-copy-header-span {
+  font-size: 90px;
+  color: #1fb0fd;
+}
+
+/*Estilo NAV*/
+/* Estilo base para la barra de navegación */
+.navbar {
+  background-color: #000000e0;
+  width: 100%;
+  height: 60px; /* Ajusta la altura de tu barra de navegación */
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ajusta el valor del z-index según sea necesario */  
+  border-bottom: 1px solid #ffffff;
+
+}
+.navbar-left, .navbar-right{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+#links {
+  text-decoration: none;
+  color: #ffffff; /* Cambia esto al color de texto deseado */
+  margin: 0 15px; /* Espacio entre enlaces */
+}
+
+
+
+/* ___________________________________________________________________ */
 main{
   width: 100%;
   display: flex;
@@ -225,17 +295,22 @@ main{
   flex-direction: column;
 }
 .services-briefcase-internal-container{
-  width: 100%;
+  width: 99%;
   height: 100%;  
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .service{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 20%;
-  border-right: #07273842 solid 1px;
+  height: 70%;  
+  max-width: 100%;
+  border: #0727381f solid 1px;  
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.3s;
@@ -247,6 +322,21 @@ main{
 .Sostenibilidad:hover,
 .Cumplimiento:hover,
 .Analiticos:hover {
-  border-right: #1fb0fd solid 1px;
+  border: #1fb0fd solid 1px;
+  
   width: 30%;
+}
+.service:hover > h3{
+  color: #1fb0fd;
+}
+
+.service-img-container{
+  width: 15px;
+  height: 15px;
+  background-color: #1fb0fd;
+}
+
+.services-briefcase-internal-container .service-image {
+  max-width: 100%; /* Establece el ancho máximo al 100% del contenedor padre (artículo) */
+  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
 }
