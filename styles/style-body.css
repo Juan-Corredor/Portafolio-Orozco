@@ -310,16 +310,17 @@ main{
   width: 20%;
   height: 85%;  
   max-width: 100%;
-  border: #0727381f solid 1px;  
+  border: #0727380e solid 1px;  
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.3s;
   padding: 15px;
   background-color: #fff;
+  text-align: justify;  
 }
 
 .card-service img {
-  width: 100%;
+  width: 50%;
   height: auto;
   max-height: 50%; /* ajusta según necesidad */
   object-fit: cover;
@@ -331,8 +332,11 @@ main{
 .Cumplimiento:hover,
 .Analiticos:hover {
   border: #1fb0fd solid 1px;
-  
-  width: 30%;
+  width: 21%;
+}
+
+.card-service > h3{
+  text-align: center;  
 }
 .card-service:hover > h3{
   color: #1fb0fd;
