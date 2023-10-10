@@ -1,3 +1,119 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 0%; 
+  width: 100%;   
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Botones */
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;  
+  font-size: 20px;
+  padding: 11px 30px;
+  background-color: #a7a7a72e;
+  color: #fff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  transition: ease-out 0.3s;
+  outline: none;
+  
+}
+.contact-button i{
+  padding-top: 5px;
+  font-size: 28px;
+}
+
+
+.contact-button:hover{
+  border: 1px solid #3a8bc5;
+  box-shadow: inset 600px 0 0 0 #3a8bc5;
+  color: #fff;
+}
+.contact-button:hover i {
+  color: #fff;
+}
+
+.bi-social-networks {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bi-social-networks .bi {
+  margin-left: 5%;
+  font-size: 35px;
+  text-decoration: none;
+  color: #ffffffc3;
+  transition: ease-out 0.2s;
+}
+
+.bi-social-networks .bi-whatsapp:hover {
+  color: #16c34a;
+  font-size: 40px;
+}
+
+.bi-social-networks .bi-envelope-fill:hover {
+  color: #d64a3a;
+  font-size: 40px;
+}
+
+.bi-social-networks .bi-linkedin:hover {
+  color: #0066c8;
+  font-size: 40px;
+}
+
+section{
+  width: 100%;  
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* estilos secciones y articulos */
+.article-img-container{
+  width: 50%;
+  padding: 0%;
+  height: 100%;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+.article-img-container img{
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+.article-two{
+  font-size: 21px;
+  padding-left: 50px;
+  padding-right: 50px;
+  overflow: hidden;
+  width: 50%;  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: justify;    
+  background-color: #fff;
+}
+
+#title-principal{
+  font-size: 25px;
+  color: #0f8ff2;
+}
+
 header{
   margin: 0%;
   padding: 0%;
@@ -5,13 +121,6 @@ header{
   height: 100vh;  
 }
 
-footer{
-  margin: 0%;
-  padding: 0%;
-  width: 100%;
-  height: 38vh;  
-  background-color: #181818fd;
-}
 .description-header{
   background-color: rgba(0, 0, 0, 0.663);
   width: 100%;
@@ -155,8 +264,18 @@ main{
 }
 
 
-.contact-description:hover .icon-contact-container > .icon-contact{
-  color: #1fb0fd;
+.contact-description:hover .icon-contact-container > .bi-envelope-fill{
+  color: #d64a3a;
+  border: solid 1px #d64a3a;   
+}
+.contact-description:hover .icon-contact-container > .bi-whatsapp{
+  color: #16c34a;
+  border: solid 1px #16c34a;   
+  
+}
+.contact-description:hover .icon-contact-container > .bi-linkedin{
+  color: #0066c8;
+  border: solid 1px #0066c8;   
   
 }
 
@@ -327,11 +446,23 @@ main{
   text-align: justify;  
 }
 
+.card-service > h3{
+  text-align: center;  
+}
 .card-service img {
   width: 50%;
   height: auto;
   max-height: 50%; /* ajusta según necesidad */
   object-fit: cover;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.3s;
+}
+
+.card-service:hover > img{
+  width: 60%;
+  height: auto;
+  max-height: 60%; /* ajusta según necesidad */
 }
 
 .Asesoria:hover,
@@ -340,23 +471,45 @@ main{
 .Cumplimiento:hover,
 .Analiticos:hover {
   border: #1fb0fd solid 1px;
-  width: 21%;
+  /* width: 21%; */
 }
 
-.card-service > h3{
-  text-align: center;  
-}
 .card-service:hover > h3{
   color: #1fb0fd;
+  /* font-size: 25px; */
 }
 
-.card-service-img-container{
-  width: 15px;
-  height: 15px;
-  background-color: #1fb0fd;
+
+/* footer */
+
+footer{
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 60vh;  
+  background-color: #181818fd;
+}
+.icon-footer{
+  display: flex;  
+  justify-content: center;
+  align-items: center;  
+  width: 30%;
+  height: 100%;
 }
 
-.services-briefcase-internal-container .service-image {
-  max-width: 100%; /* Establece el ancho máximo al 100% del contenedor padre (artículo) */
-  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+.contact-info{
+  width: 23.33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;  
+  color: #fff;  
+}
+
+.icon-footer img{
+  width: 100%;
+  height: auto;
+  max-height: 60%; /* ajusta según necesidad */
 }
