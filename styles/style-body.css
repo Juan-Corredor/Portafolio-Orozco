@@ -72,7 +72,7 @@ body{
 
 section{
   width: 100%;  
-  height: calc(100vh - 60px);
+  height: calc(100vh - 48px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,6 +110,7 @@ section{
 }
 
 #title-principal{
+  margin-top: 5%;
   font-size: 25px;
   color: #0f8ff2;
 }
@@ -159,7 +160,7 @@ header{
 .navbar {
   background-color: #000000f8;
   width: 100%;
-  height: 60px; /* Ajusta la altura de tu barra de navegación */
+  height: 48px; /* Ajusta la altura de tu barra de navegación */
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -167,7 +168,7 @@ header{
   top: 0;
   left: 0;
   z-index: 1000; /* Ajusta el valor del z-index según sea necesario */  
-  border-bottom: 1px solid #ffffff;
+  /* border-bottom: 1px solid #ffffff; */
 
 }
 .navbar-left, .navbar-right{
@@ -213,7 +214,15 @@ main{
   width: 100%;  
 }
 
+#about{
+  border: none;
+  border-bottom: #07273822 solid 1px;
+}
 
+#contact{
+  border: none;
+  border-top: #07273822 solid 1px;
+}
 
 #contact > .article-img-container{
   background-image: url(../resource/fondo2.jpg);  
@@ -229,8 +238,8 @@ main{
   display: flex;
   justify-content: center;
   width: 100%;
-  font-size: 45px;
-  margin-bottom: 10%;
+  font-size: 35px;
+  margin-bottom: 8%;
 }
 
 
@@ -245,7 +254,7 @@ main{
   background-color: #071c27ad;  
   color: #fff;  
 }
-.contact-img-internal-container > h3{ font-size: 50px; }
+.contact-img-internal-container > h3{ font-size: 35px; }
 
 .contact-description{  
   width: 100%;
@@ -315,7 +324,7 @@ main{
 
 .input-container {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 8%;
   width: 100%;
 }
 
@@ -353,7 +362,7 @@ main{
   transition: all 0.3s ease;
   pointer-events: none;
   font-size: 16px;
-  color: #07273842;
+  color: #0727385e;
 }
 
 .input-container input:focus + label,
@@ -378,7 +387,7 @@ main{
   justify-content: end;
   padding: 0%;
   margin: 0%;  
-  margin-bottom: 5%;
+  margin-bottom: 1%;
 }
 
 .div-button .contact-button {
@@ -484,12 +493,32 @@ main{
 
 footer{
   display: flex;
-  margin: 0%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;  
   padding: 0%;
   width: 100%;
-  height: 60vh;  
-  background-color: #181818fd;
+  height: 65vh;  
+  background-color: #000000fd;
+  overflow: hidden;
 }
+
+.div-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+#copyright{  
+  font-size: 15px;  
+  color: #ffffff3f;
+}
+
 .icon-footer{
   display: flex;  
   justify-content: center;
@@ -498,18 +527,35 @@ footer{
   height: 100%;
 }
 
-.contact-info{
+.footer-section{
   width: 23.33%;
-  height: 100%;
+  height: 65%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: start;  
-  color: #fff;  
+  color: #fff;    
+}
+
+.footer-section a{
+  margin-bottom: 5%;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.3s;
+}
+.footer-section a:hover{
+  font-size: 20px;
 }
 
 .icon-footer img{
   width: 100%;
   height: auto;
   max-height: 60%; /* ajusta según necesidad */
+}
+.footer-section h3{
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: #ffffff solid 1px;
 }
