@@ -109,8 +109,8 @@ section{
   background-color: #fff;
 }
 
-#title-principal{
-  margin-top: 5%;
+.title-principal{
+  margin-top: 2%;
   font-size: 25px;
   color: #0f8ff2;
 }
@@ -177,7 +177,7 @@ header{
 }
 
 /* Estilo para los enlaces de la barra de navegación */
-#links {
+.links {
   text-decoration: none;
   color: #ffffff; /* Cambia esto al color de texto deseado */
   margin: 0 15px; /* Espacio entre enlaces */
@@ -239,7 +239,8 @@ main{
   justify-content: center;
   width: 100%;
   font-size: 35px;
-  margin-bottom: 8%;
+  margin-top: 0%;
+  margin-bottom: 10%;
 }
 
 
@@ -442,7 +443,7 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   width: 20%;
   height: 85%;  
   max-width: 100%;
@@ -452,7 +453,7 @@ main{
   transition: ease-out 0.3s;
   padding: 15px;
   background-color: #fff;
-  text-align: justify;  
+  text-align: left;  
 }
 
 .card-service > h3{
@@ -499,7 +500,7 @@ footer{
   margin: 0%;  
   padding: 0%;
   width: 100%;
-  height: 65vh;  
+  height: 55vh;  
   background-color: #000000fd;
   overflow: hidden;
 }
@@ -523,27 +524,28 @@ footer{
   display: flex;  
   justify-content: center;
   align-items: center;  
-  width: 30%;
-  height: 100%;
+  width: 25%;
+  height: 65%;
+
 }
 
-.footer-section{
-  width: 23.33%;
+.footer-section{  
+  width: 25%;
   height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;  
   color: #fff;    
+
 }
+
 
 .footer-section a{
   margin-bottom: 5%;
   color: #fff;
   text-decoration: none;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.3s;
+  transition: var(--flex-transition);
 }
 .footer-section a:hover{
   font-size: 20px;
