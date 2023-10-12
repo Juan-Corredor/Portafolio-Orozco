@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="./styles/variables.css">
-    <link rel="stylesheet" href="./styles/style-body.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">    
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
     <nav class="navbar" id="navbar">
         <div class="navbar-left">
             <a href="#header">
-                <img src="./resource/firma.svg" alt="Logo" width="200">
+                <img src="./resource/icon2-orozco.svg" alt="Logo" width="200">
             </a>
         </div>
         <div class="navbar-right">
@@ -46,23 +45,25 @@
 
     <main>
         <section id="about">
-            <article class="article-img-container"></article>
-            <article class="article-two">
-                <h1 class="title-principal">Acerca de nosotros</h1>
-                <p>
-                    En Orozco y Orozco, nos apasiona brindar soluciones financieras,
-                    contables y tributarias de vanguardia a empresas de todos los
-                    sectores. Con más de una década de experiencia, hemos forjado una
-                    sólida reputación como un socio confiable y experto en el mundo de
-                    la consultoría.
-                </p>
-                <h1 class="title-principal">Comprometidos con tus finanzas y responsabilidades</h1>
-                <ul>
-                    <li>Experiencia Comprobada</li>
-                    <li>Conocimiento Profundo y multisectorial</li>
-                    <li>Enfoque Personalizado</li>
-                    <li>Confianza y Ética</li>
-                </ul>
+            <article class="article-img-container-about">
+              <img src="./resource/about-5.svg" alt="Descripción de la imagen">
+            </article>
+            <article class="article-about">
+                <div class="div-about">
+                  <h1 class="title-principal">Acerca de nosotros</h1>
+                  <p>
+                      En Orozco y Orozco, nos apasiona brindar soluciones financieras,
+                      contables y tributarias de vanguardia a empresas de todos los
+                      sectores. Con más de una década de experiencia, hemos forjado una
+                      sólida reputación como un socio confiable y experto en el mundo de
+                      la consultoría.
+                  </p>
+                  <h1 class="title-principal">Comprometidos con tus finanzas y responsabilidades</h1>                  
+                  <p> <span class="bi bi-check2" style="color: #00D764; font-size: 25px;"></span> Experiencia Comprobada</p>
+                  <p> <span class="bi bi-check2" style="color: #00D764; font-size: 25px;"></span> Conocimiento Profundo y multisectorial</p>
+                  <p> <span class="bi bi-check2" style="color: #00D764; font-size: 25px;"></span> Enfoque Personalizado</p>
+                  <p> <span class="bi bi-check2" style="color: #00D764; font-size: 25px;"></span> Confianza y Ética</p>                  
+                </div>
             </article>
         </section>
 
@@ -70,7 +71,7 @@
             <h1 class="title-principal">Nuestro portafolio de servicios</h1>
             <article class="services-briefcase-internal-container">
                 <article class="asesoria card-service">
-                    <img src="./resource/impuesto.png" alt="Asesoria tributaria" class="service-image">
+                    <img src="./resource/service-1.png" alt="Asesoria tributaria" class="service-image">
                     <h3>Asesoria tributaria</h3>
                     <p>
                         Simplificamos la complejidad de tus obligaciones tributarias y
@@ -81,7 +82,7 @@
                     </p>
                 </article>
                 <article class="Auditoria card-service">
-                    <img src="./resource/investigacion.png" alt="Asesoria tributaria" class="service-image">
+                    <img src="./resource/service-2.png" alt="Asesoria tributaria" class="service-image">
                     <h3>Auditoria y gestion de riesgos</h3>
                     <p>
                         Llevamos a cabo auditorías exhaustivas identificando áreas de
@@ -91,7 +92,7 @@
                     </p>
                 </article>
                 <article class="Sostenibilidad card-service">
-                    <img src="./resource/sostenibilidad.png" alt="Asesoria tributaria" />
+                    <img src="./resource/service-3.png" alt="Asesoria tributaria" />
                     <h3>Sostenibilidad y ESG</h3>
                     <p>
                         Te ayudamos a navegar por el complejo paisaje de las
@@ -101,7 +102,7 @@
                     </p>
                 </article>
                 <article class="Cumplimiento card-service">
-                    <img src="./resource/cumplimiento.png" alt="Asesoria tributaria" />
+                    <img src="./resource/service-4.png" alt="Asesoria tributaria" />
                     <h3>Cumplimiento legal</h3>
                     <p>
                         Personalizamos soluciones acordes a tus necesidades específicas
@@ -111,7 +112,7 @@
                     </p>
                 </article>
                 <article class="Analiticos card-service">
-                    <img src="./resource/eficiencia.png" alt="Asesoria tributaria" />
+                    <img src="./resource/service-5.png" alt="Asesoria tributaria" />
                     <h3>Analiticos y automatizacion</h3>
                     <p>
                         Transformamos tus datos en información valiosa y acciones
@@ -124,9 +125,9 @@
         </section>
 
         <section id="contact">
-            <article class="article-two">
+            <article class="article-contact">
                 <h1 class="title-principal">Formulario solicitud</h1>
-                <form id="miFormulario" method="post">
+                <form id="application-form" method="post">
                     <div class="inputs-form">
                         <div class="input-container">
                             <input type="text" name="name" id="name" required>
@@ -151,7 +152,7 @@
                 </form>
             </article>
 
-            <article class="article-img-container">
+            <article class="article-img-container-contact">
                 <div class="contact-img-internal-container">
                     <h3>Contáctenos</h3>
                     <div class="contact-description">
@@ -190,7 +191,7 @@
     <footer>
         <div class="div-footer">
             <div class="icon-footer">
-                <img src="./resource/icon.svg" alt="icono OrozcoYOrozco">
+                <img src="./resource/icon-orozco.svg" alt="icono OrozcoYOrozco">
             </div>
             <section class="menu footer-section">
                 <h3>Menú</h3>
@@ -224,7 +225,7 @@
         <h3 id="copyright">@copyright all rights reserved</h3>
     </footer>
 
-    <!-- <script src="./scripts/menu.js"></script> -->
-    <script src="./scripts/postSolicitud.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <!-- <script src="./scripts/postSolicitud.js"></script> -->
 </body>
 </html>
