@@ -20,16 +20,16 @@ links.forEach((link) => {
   });
 });
 
-document.querySelectorAll('.links').forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const targetId = link.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-      document.querySelectorAll('section').forEach(section => {
-        section.style.transform = 'translateY(0)';
-      });
-      targetSection.style.transform = 'translateY(0)';
-    }
-  });
-});
+// document.querySelectorAll('.links').forEach(link => {
+//   link.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     const targetId = link.getAttribute('href').substring(1);
+//     const targetSection = document.getElementById(targetId);
+//     if (targetSection) {
+//       document.querySelectorAll('section').forEach(section => {
+//         section.style.transform = 'translateY(0)';
+//       });
+//       targetSection.style.transform = 'translateY(0)';
+//     }
+//   });
+// });
