@@ -584,3 +584,9 @@ footer{
   border: none;
   border-bottom: #ffffff solid 1px;
 }
+
+
+.active {  
+  border: none;
+  border-bottom: 1px solid #fff;    
+}

@@ -1,10 +1,19 @@
+
 // Seleccionar todos los enlaces de navegación
-const links = document.querySelectorAll('a[href^="#"]');
-  
+const links = document.querySelectorAll('.links');
+
 // Agregar un manejador de eventos a cada enlace
 links.forEach((link) => {
   link.addEventListener('click', (e) => {
     e.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+
+    // Eliminar la clase "active" de todos los enlaces
+    links.forEach((otherLink) => {
+      otherLink.classList.remove('active');
+    });
+
+    // Agregar la clase "active" solo al enlace actual
+    link.classList.add('active');
 
     // Obtener el ID de la sección a la que se va a desplazar
     const targetId = link.getAttribute('href').substring(1);
@@ -19,17 +28,3 @@ links.forEach((link) => {
     });
   });
 });
-
-// document.querySelectorAll('.links').forEach(link => {
-//   link.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     const targetId = link.getAttribute('href').substring(1);
-//     const targetSection = document.getElementById(targetId);
-//     if (targetSection) {
-//       document.querySelectorAll('section').forEach(section => {
-//         section.style.transform = 'translateY(0)';
-//       });
-//       targetSection.style.transform = 'translateY(0)';
-//     }
-//   });
-// });
